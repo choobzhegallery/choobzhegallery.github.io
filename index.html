@@ -4,94 +4,146 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Choobzhe Gallery | گردنبند چوبی دست‌ساز</title>
 
-<meta name="description" content="Choobzhe Gallery - طراحی و ساخت گردنبند چوبی و زیورآلات دست‌ساز. خرید مستقیم از هنرمند. سفارش سفارشی گردنبند چوبی در ایران.">
+<title>چوبژه | گردنبند چوبی دست‌ساز و آثار چوبی هنری</title>
+
+<meta name="description" content="چوبژه گالری مجموعه‌ای از گردنبندهای چوبی دست‌ساز، کانزاشی، دستبند و آثار چوبی هنری با الهام از طبیعت است.">
 
 <meta name="keywords" content="چوبژه, گردنبند چوبی, زیورآلات چوبی, کار دست ساز, wood necklace, handmade wood jewelry">
 
 <style>
+
 body{
-    margin:0;
-    font-family:tahoma;
-    background:#f6f1e7;
-    color:#2c2c2c;
+margin:0;
+padding:0;
+font-family:tahoma;
+background:#f7f3ec;
+color:#333;
+line-height:1.8;
 }
 
 header{
-    background:#4b2e1f;
-    color:white;
-    text-align:center;
-    padding:70px 20px;
+background:#4a3222;
+color:white;
+text-align:center;
+padding:60px 20px;
 }
 
 header h1{
-    margin:0;
-    font-size:40px;
+margin:0;
+font-size:42px;
 }
 
 header p{
-    margin-top:10px;
-    opacity:0.9;
+font-size:18px;
+opacity:0.9;
 }
 
-section{
-    padding:50px 20px;
-    max-width:1000px;
-    margin:auto;
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
-h2{
-    text-align:center;
-    color:#4b2e1f;
-    margin-bottom:30px;
+.section-title{
+text-align:center;
+margin:50px 0 25px;
+color:#4a3222;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+text-decoration:none;
+color:#333;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
+width:100%;
+height:220px;
+object-fit:cover;
 }
 
-.card p{
-    padding:10px;
+.card h3{
+padding:15px;
+text-align:center;
 }
 
 .about{
-    text-align:center;
-    line-height:2;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.product{
+background:white;
+border-radius:15px;
+padding:15px;
+margin-top:20px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.product img{
+width:100%;
+max-width:350px;
+display:block;
+margin:auto;
+border-radius:12px;
+}
+
+.product h3{
+text-align:center;
 }
 
 .btn{
-    display:inline-block;
-    background:#25D366;
-    color:white;
-    padding:15px 25px;
-    border-radius:10px;
-    text-decoration:none;
-    margin-top:20px;
+display:inline-block;
+padding:12px 20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-top:10px;
+}
+
+.center{
+text-align:center;
+}
+
+.links{
+margin-top:25px;
+text-align:center;
+}
+
+.links a{
+display:inline-block;
+margin:10px;
+text-decoration:none;
+color:#4a3222;
+font-weight:bold;
 }
 
 footer{
-    text-align:center;
-    padding:20px;
-    background:#222;
-    color:white;
-    font-size:14px;
+margin-top:50px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
 }
+
 </style>
 
 </head>
@@ -99,51 +151,100 @@ footer{
 <body>
 
 <header>
-    <h1>Choobzhe Gallery</h1>
-    <p>گردنبند چوبی دست‌ساز با الهام از طبیعت</p>
+<h1>Choobzhe Gallery</h1>
+<p>گردنبند چوبی دست‌ساز و آثار چوبی الهام گرفته از طبیعت</p>
 </header>
 
-<section>
-    <h2>محصولات</h2>
+<div class="container">
 
-    <div class="grid">
-        <div class="card">
-    <img src="images/1.jpg">
-    <h3>گردنبند چوبی گردو</h3>
-    <p>ساخته شده از چوب طبیعی، سبک، خاص و مناسب استایل مینیمال</p>
+<h2 class="section-title">دسته‌بندی محصولات</h2>
+
+<div class="categories">
+
+<a class="card" href="#">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800">
+<h3>گردنبندهای چوبی</h3>
+</a>
+
+<a class="card" href="#">
+<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800">
+<h3>کانزاشی</h3>
+</a>
+
+<a class="card" href="#">
+<img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800">
+<h3>دستبند</h3>
+</a>
+
+<a class="card" href="#">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=800">
+<h3>چوب سیگار</h3>
+</a>
+
 </div>
 
-        <div class="card">
-            <img src="images/2.jpg">
-            <p>کانزاشی</p>
-        </div>
+<h2 class="section-title">درباره چوبژه</h2>
+<div class="about">
+<p>
+چوبژه گالری مجموعه‌ای از آثار چوبی دست‌ساز است که با الهام از طبیعت، سادگی و زیبایی ساخته می‌شوند.
+</p>
 
-        <div class="card">
-            <img src="images/3.jpg">
-            <p>دستبند</p>
-        </div>
+<p>
+هر قطعه به صورت دستی شکل می‌گیرد و تلاش ما این است که حس طبیعت و هنر را در قالب زیورآلات و آثار چوبی به زندگی روزمره نزدیک‌تر کنیم.
+</p>
 
-        <div class="card">
-            <img src="images/3.jpg">
-            <p>چوب سیگار</p>
-        </div>
-    </div>
-</section>
+<p>
+در چوبژه می‌توانید گردنبندهای چوبی، کانزاشی، دستبند و آثار چوبی خاص را مشاهده و سفارش دهید.
+</p>
 
-<section class="about">
-    <h2>درباره ما</h2>
-    <p>
-        Choobzhe Gallery یک برند هنری در زمینه ساخت گردنبند و زیورآلات چوبی دست‌ساز است.
-        هر محصول با دقت، عشق و الهام از طبیعت ساخته می‌شود.
-    </p>
+</div>
 
-    <a class="btn" href="https://wa.me/989224903346?text=سلام%20برای%20سفارش%20گردنبند%20چوبی%20مزاحمتون%20شدم">
-        سفارش در واتساپ
-    </a>
-</section>
+<h2 class="section-title">نمونه محصول</h2>
+
+<div class="product">
+
+<a href="images/n1.jpg" target="_blank">
+<img src="images/n1.jpg" alt="گردنبند چوبی دست ساز">
+</a>
+
+<h3>گردنبند چوبی دست‌ساز</h3>
+
+<p>
+ساخته شده از چوب طبیعی با الهام از طبیعت و طراحی هنری منحصر به فرد.
+</p>
+
+<div class="center">
+
+</div>
+
+</div>
+
+<div class="links">
+
+<a href="https://instagram.com/choobzhe" target="_blank">
+📷 اینستاگرام چوبژه
+</a>
+
+<a href="https://basalam.com/gallerychoobzhe" target="_blank">
+🛍 غرفه چوبژه در باسلام
+</a>
+
+<a href="https://wa.me/989224903346?text=سلام%20برای%20استعلام%20قیمت%20این%20محصول%20پیام%20می‌دهم." target="_blank">
+💬 سفارش در واتساپ
+</a>
+
+</div>
 
 <footer>
-    © Choobzhe Gallery - Handmade Wood Jewelry
+
+<p>
+Choobzhe Gallery
+</p>
+
+<p>
+گردنبند چوبی دست‌ساز | زیورآلات چوبی | آثار چوبی هنری
+</p>
+
 </footer>
 
 </body>
