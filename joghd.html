@@ -78,22 +78,72 @@ border-bottom:1px solid #d6c4ae;
 .info-box p:last-child{
 border-bottom:none;
 }
-  
+ .slider{
+text-align:center;
+margin-bottom:20px;
+}
+ .slider img{
+width:100%;
+max-width:500px;
+border-radius:15px;
+}
+  .controls{
+margin-top:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+}
+  .controls button{
+background:#4a3222;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+}
+  font-weight:bold;
+color:#4a3222;
 </style>
 </head>
+  <script>
+
+const images = [
+"images/n1-1.jpg",
+"images/n1-2.jpg",
+"images/n1-3.jpg"
+];
+
+let current = 0;
+
+function updateImage(){
+document.getElementById("productImage").src = images[current];
+document.getElementById("counter").innerText =
+(current + 1) + " / " + images.length;
+}
+
+function nextImage(){
+current = (current + 1) % images.length;
+updateImage();
+}
+
+function prevImage(){
+current = (current - 1 + images.length) % images.length;
+updateImage();
+}
+
+</script>
+
 <body>
 <h1>جغد</h1>
 <div class="gallery">
 <div class="product">
-<a href="images/n1-1.jpg" target="_blank">
-<img src="images/n1-1.jpg">
-</a>
-  <a href="images/n1-2.jpg" target="_blank">
-<img src="images/n1-2.jpg">
-</a>
-<a href="images/n1-3.jpg" target="_blank">
-<img src="images/n1-3.jpg">
-</a>
+<div class="slider">
+<img id="productImage" src="images/n1-1.jpg" alt="گردنبند جغد">
+<div class="controls">
+</div>
+</div>
+
 <h3> گردنبند چوبی دست ساز طرح جغد</h3>
 <div style="
 background:#f4eee5;
